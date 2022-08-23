@@ -46,7 +46,7 @@
                                                 <select class="form-control input-sm m-bot15 choose city" name="city" id="city"  class="form-control @error('tinh') border-error @enderror tinh" value="{{old('tinh')}}">
                                                     <option value="">-----{{__('Chọn Thành Phố')}}-----</option>
                                                     @foreach($city as $key => $ci)
-                                                    <option value="{{$ci->matp}}">{{$ci->name_city}}</option>
+                                                    <option value="{{$ci->matp}}">{{$ci->name}}</option>
                                                     @endforeach
                                                 </select>
                                                 @error('city')

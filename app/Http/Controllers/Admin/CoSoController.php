@@ -95,13 +95,13 @@ class CoSoController extends Controller
                 $output .= '<option>---Chọn quận huyện---</option>';
                 foreach ($select_province as $province) {
 
-                    $output .= '<option value="' . $province->maqh . '">' . $province->name_quanhuyen . '</option>';
+                    $output .= '<option value="' . $province->maqh . '">' . $province->name . '</option>';
                 }
             } else {
                 $select_wards = Wards::where('maqh', $data['ma_id'])->orderby('xaid', 'ASC')->get();
                 $output .= '<option>---Chọn xã phường---</option>';
                 foreach ($select_wards as $ward) {
-                    $output .= '<option value="' . $ward->xaid . '">' . $ward->name_xaphuong . '</option>';
+                    $output .= '<option value="' . $ward->xaid . '">' . $ward->name . '</option>';
                 }
             }
             echo $output;
@@ -155,13 +155,13 @@ class CoSoController extends Controller
                 $output .= '<option>---Chọn quận huyện---</option>';
                 foreach ($select_province as $province) {
 
-                    $output .= '<option value="' . $province->maqh . '">' . $province->name_quanhuyen . '</option>';
+                    $output .= '<option value="' . $province->maqh . '">' . $province->name . '</option>';
                 }
             } else {
                 $select_wards = Wards::where('maqh', $data['ma_id'])->orderby('xaid', 'ASC')->get();
                 $output .= '<option>---Chọn xã phường---</option>';
                 foreach ($select_wards as $ward) {
-                    $output .= '<option value="' . $ward->xaid . '">' . $ward->name_xaphuong . '</option>';
+                    $output .= '<option value="' . $ward->xaid . '">' . $ward->name . '</option>';
                 }
             }
             echo $output;

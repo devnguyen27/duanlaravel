@@ -55,9 +55,9 @@
                                             <td>{{ $loop->index + 1 }}</td>
                                             <td class="" >{{$row->name}}</td>
                                             <td class="" >{{$row->diachi}}</td>
-                                            <td class="" >{{$row->city->name_city}}</td>
-                                            <td class="" >{{$row->province->name_quanhuyen}}</td>
-                                            <td class="" >{{$row->wards->name_xaphuong}}</td>
+                                            <td class="" >{{$row->city->name}}</td>
+                                            <td class="" >{{$row->province->name}}</td>
+                                            <td class="" >{{$row->wards->name}}</td>
 
                                             <td>
                                                 <a role="button" class="btn btn-primary mr-2" href="{{route('coso.edit',$row->id)}}"><i class="fa fa-edit"></i></a>

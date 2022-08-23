@@ -67,9 +67,9 @@
                                                 <option value="">-----{{__('Chọn Thành Phố')}}-----</option>
                                                 @foreach($city as $key => $ci)
                                                 @if($data->tinh == $ci->matp)
-                                                <option value="{{$ci->matp}}" selected >{{$ci->name_city}}</option>
+                                                <option value="{{$ci->matp}}" selected >{{$ci->name}}</option>
                                                 @else
-                                                <option value="{{$ci->matp}}" >{{$ci->name_city}}</option>
+                                                <option value="{{$ci->matp}}" >{{$ci->name}}</option>
                                                 @endif
                                                 @endforeach
                                                 @error('tinh')
@@ -86,9 +86,9 @@
                                               <option value="" selected>-----{{__('Chọn Quận/Huyện')}}-----</option>
                                               @foreach($province as $key => $cii)
                                               @if($data->quan == $cii->maqh)
-                                              <option value="{{$cii->maqh}}" selected>{{$cii->name_quanhuyen}}</option>
+                                              <option value="{{$cii->maqh}}" selected>{{$cii->name}}</option>
                                                 @else
-                                                <option value="{{$cii->maqh}}">{{$cii->name_quanhuyen}}</option>
+                                                <option value="{{$cii->maqh}}">{{$cii->name}}</option>
                                                 @endif
                                                 @endforeach
                                               </select>
@@ -103,9 +103,9 @@
                                                 <option value="">-----{{__('Chọn Xã/Phường')}}-----</option>
                                                 @foreach($wards as $key => $ciii)
                                               @if($data->huyen == $ciii->xaid)
-                                              <option value="{{$ciii->xaid}}" selected>{{$ciii->name_xaphuong}}</option>
+                                              <option value="{{$ciii->xaid}}" selected>{{$ciii->name}}</option>
                                                 @else
-                                                <option value="{{$ciii->xaid}}">{{$ciii->name_xaphuong}}</option>
+                                                <option value="{{$ciii->xaid}}">{{$ciii->name}}</option>
                                                 @endif
                                                 @endforeach
                                               </select>

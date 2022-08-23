@@ -9,7 +9,7 @@ class Province extends Model
 {
      public $timestamps = false; //set time to false
     protected $fillable = [
-    	'name_quanhuyen', 'type','matp'
+    	'name', 'type','matp'
     ];
     protected $primaryKey = 'maqh';
  	protected $table = 'tbl_quanhuyen';
