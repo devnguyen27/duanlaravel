@@ -62,6 +62,7 @@ class DonHangchitietController extends Controller
 
 
         return view('Admin.DonHang.detail', compact('donHang','sanpham','khachHang','Tong',));
+
     }
 
 
