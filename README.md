@@ -1,4 +1,6 @@
 
+## test tài khoản admin : tài khoản : nhanvien@gmail.com       ||   mật khẩu: 123123123
+## test tài khoản users : số điện thoại : 0965286057           ||   mật khẩu 123123
 ## rich text editor
 https://froala.com/
 ## Build laravel echo server 
